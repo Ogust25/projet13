@@ -472,77 +472,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
-.inset-x-1\/2 {
-  left: 50%;
-  right: 50%;
-}
-
-.right-1\/2 {
-  right: 50%;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-1\/2 {
-  top: 50%;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
 .left-24 {
   left: 6rem;
 }
 
-.top-36 {
-  top: 9rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.left-36 {
-  left: 9rem;
-}
-
-.top-1 {
-  top: 0.25rem;
+.left-40 {
+  left: 10rem;
 }
 
 .top-14 {
   top: 3.5rem;
-}
-
-.left-3 {
-  left: 0.75rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.left-40 {
-  left: 10rem;
 }
 
 .my-5 {
@@ -555,25 +494,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.75rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .flex {
@@ -596,16 +518,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 25%;
 }
 
-.h-3\/4 {
-  height: 75%;
-}
-
 .h-full {
   height: 100%;
 }
 
-.h-auto {
-  height: auto;
+.max-h-0 {
+  max-height: 0px;
 }
 
 .w-screen {
@@ -640,8 +558,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-3xl {
@@ -672,6 +590,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -697,17 +620,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 }
 
+.accordion:after {
+  content: '\002B';
+  color: #FF5ACD;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active{
+  font-weight: bold;
+}
+
+.boxAcc {
+  transition: max-height 0.2s ease-out;
+}
+
 @media (min-width: 640px) {
   .sm\:relative {
     position: relative;
-  }
-
-  .sm\:mr-10 {
-    margin-right: 2.5rem;
-  }
-
-  .sm\:mr-1 {
-    margin-right: 0.25rem;
   }
 
   .sm\:mr-16 {
@@ -726,16 +659,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 100%;
   }
 
-  .sm\:w-4\/6 {
-    width: 66.666667%;
-  }
-
-  .sm\:w-3\/5 {
-    width: 60%;
-  }
-
   .sm\:w-7\/12 {
     width: 58.333333%;
+  }
+
+  .sm\:w-4\/5 {
+    width: 80%;
   }
 
   .sm\:items-start {
@@ -752,29 +681,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .sm\:hover\:text-pink-500:hover {
-    --tw-text-opacity: 1;
-    color: rgb(236 72 153 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:relative {
-    position: relative;
-  }
-
-  .lg\:w-4\/6 {
-    width: 66.666667%;
-  }
-
-  .lg\:w-3\/6 {
-    width: 50%;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
-  .lg\:hover\:text-pink-500:hover {
     --tw-text-opacity: 1;
     color: rgb(236 72 153 / var(--tw-text-opacity));
   }

@@ -11,3 +11,21 @@
 .shadowCustom{
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 }
+
+.accordion:after {
+  content: '\002B';
+  color: #FF5ACD;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+
+.active{
+    font-weight: bold;
+}
+.boxAcc {
+  transition: max-height 0.2s ease-out;
+}
