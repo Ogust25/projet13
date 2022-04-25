@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kumbhFont{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.bgCustom{
+    background: linear-gradient(180deg, #FBDA61 0%, #FF5ACD 100%);
+}
+.shadowCustom{
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+}
